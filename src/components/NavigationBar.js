@@ -14,6 +14,10 @@ const Styles = styled.div`
       color: white;
     }
   }
+
+  .navbar-toggler #basic-navbar-nav {
+    color: green;
+  }
 `;
 
  export const NavigationBar = () => (
@@ -23,8 +27,8 @@ const Styles = styled.div`
        <Navbar.Toggle aria-controls='basic-navbar-nav' />
        <Navbar.Collapse id='basic-navbar-nav'>
          <Nav className='ml-auto' >
-           <Nav.Item><Nav.Link href='/Dashboard'>Home</Nav.Link></Nav.Item>
-           <Nav.Item><Nav.Link href='/XSS'>XSS</Nav.Link></Nav.Item>
+           <Nav.Item><Nav.Link href='/dashboard'>Home</Nav.Link></Nav.Item>
+           <Nav.Item><Nav.Link href='/modules/XSS'>XSS</Nav.Link></Nav.Item>
            <Nav.Item><Nav.Link href='/contact'>Contact</Nav.Link></Nav.Item>
          </Nav>
        </Navbar.Collapse>
