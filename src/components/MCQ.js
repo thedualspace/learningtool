@@ -1,5 +1,12 @@
 import React from 'react';
 import QuestionList from './QuestionList';
+import styled from 'styled-components';
+
+const Styles = styled.div`
+  .Question-prompt {
+    color: red;
+  }
+`;
 
 export class MCQ extends React.Component{
   constructor(props) {
@@ -14,7 +21,9 @@ export class MCQ extends React.Component{
 
   render() {
     return (
-      <QuestionList questions={this.props.questions} />
+      <Styles>
+        <QuestionList questions={this.props.questions} />
+      </Styles>
     )
   }
 }

@@ -1,28 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import XSS from './components/XSS';
-import SQL from './components/SQL';
-import MCQ from './components/MCQ'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Dashboard} from './Dashboard';
+import {Layout} from './components/Layout';
+import {NavigationBar} from './components/NavigationBar';
+import {NoMatch} from './NoMatch';
+import {XSSpage} from './XSS-page';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <MCQ questions={XSS.questions} />
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <NavigationBar />
+      <Layout>
+        <Router>
+          <Switch>
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/XSS" component={XSSpage} />
+            <Route component={NoMatch} />
+          </Switch>
+        </Router>
+      </Layout>
+    </React.Fragment>
   );
 }
 

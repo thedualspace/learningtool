@@ -1,6 +1,5 @@
 import React from 'react';
 import Question from './Question';
-import MCQ from './MCQ';
 
 export class QuestionList extends React.Component {
   setAnswerEvent(e) {
@@ -10,7 +9,7 @@ export class QuestionList extends React.Component {
   render() {
     return (
       <form onSubmit={this.setAnswerEvent}>
-        <div className="QuestionList">
+        <div className="Question-list">
           {
             this.props.questions.map( question => {
               return <Question
