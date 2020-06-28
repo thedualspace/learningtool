@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

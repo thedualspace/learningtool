@@ -1,32 +1,32 @@
 const CSRF = {
   questions: [
     {
-      prompt: 'What is the answer to the first CSRF question?',
+      prompt: 'Which of the following energy sources is the least expensive?',
       answer: [
-        'correct',
-        'incorrect',
-        'incorrect',
-        'incorrect'
+        'Solar PV',
+        'Hydro',
+        'Onshore Wind',
+        'Offshore Wind'
       ]
     },
 
     {
-      prompt: 'What is the answer to the second CSRF question?',
+      prompt: 'Which of the following renewable energy sources has seen the greatest cost reductions (costs per MWh of electricity generated) in recent years?',
       answer: [
-        'incorrect',
-        'correct',
-        'incorrect',
-        'incorrect'
+        'Onshore Wind',
+        'Geothermal',
+        'Solar',
+        'Wave'
       ]
     },
 
     {
-      prompt: 'What is the answer to the third CSRF question?',
+      prompt: 'The wind turbine on Dundalk Institute of Technology campus produces approximately how much of the campus energy requirements',
       answer: [
-        'incorrect',
-        'incorrect',
-        'correct',
-        'incorrect'
+        'Half',
+        'One quarter',
+        'Three quarters',
+        'All'
       ]
     }
   ]

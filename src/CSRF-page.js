@@ -9,12 +9,10 @@ const Styles = styled.div`
     display: block;
     max-width: 720px;
     height: auto;
-    margin: 0 auto;
+    margin: 3rem auto;
   }
 
-  div {
-    text-align: center;
-  }
+  
 `;
 
 

@@ -4,7 +4,21 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .Question-prompt {
-    color: red;
+    color: black;
+    margin: 1.5rem auto;
+  }
+
+  .Question-answers {
+    margin: 1rem auto;
+    color: #616565;
+  }
+
+  input {
+    margin: 0rem 1rem;
+  }
+
+  .btn-primary {
+    margin: 0 0 1rem 1.5rem;
   }
 `;
 

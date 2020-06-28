@@ -7,8 +7,7 @@ const XSS = {
         'incorrect',
         'incorrect',
         'incorrect'
-      ],
-      key: 1
+      ]
     },
 
     {
@@ -18,8 +17,7 @@ const XSS = {
         'correct',
         'incorrect',
         'incorrect'
-      ],
-      key: 2
+      ]
     },
 
     {
@@ -29,8 +27,7 @@ const XSS = {
         'incorrect',
         'correct',
         'incorrect'
-      ],
-      key: 3
+      ]
     }
   ]
 };

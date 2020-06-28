@@ -19,7 +19,8 @@ export class QuestionList extends React.Component {
             })
           }
         </div>
-        <button className='MCQ-submit' type='submit'>
+        <hr />
+        <button className='btn btn-primary' type='submit'>
           Submit
         </button>
       </form>
