@@ -22,7 +22,7 @@ const Styles = styled.div`
 
  export const NavigationBar = () => (
    <Styles>
-     <Navbar expand='lg'>
+     <Navbar expand='lg' variant="dark" >
        <Navbar.Brand href="/dashboard">Code Life</Navbar.Brand>
        <Navbar.Toggle aria-controls='basic-navbar-nav' />
        <Navbar.Collapse id='basic-navbar-nav'>
