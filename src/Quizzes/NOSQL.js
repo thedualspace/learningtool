@@ -1,4 +1,6 @@
 const NOSQL = {
+  videoTitle: "NOSQL Tutorial",
+  videoSrc: "https://www.youtube.com/embed/h0h37-Dwd_A",
   questions: [
     {
       prompt: 'What is the answer to the first NOSQL question?',

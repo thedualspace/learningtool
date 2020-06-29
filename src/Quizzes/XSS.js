@@ -1,4 +1,6 @@
 const XSS = {
+  videoTitle: "XSS Tutorial",
+  videoSrc: "https://www.youtube.com/embed/eymxlggL9EQ",
   questions: [
     {
       prompt: 'What is the answer to the first XSS question?',

@@ -1,28 +1,9 @@
 import React from 'react';
-import MCQ from './components/MCQ';
 import CSRF from './Quizzes/CSRF';
-import styled from 'styled-components';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
+import {ModuleLayout} from './components/ModuleLayout'
 
-const Styles = styled.div`
-  .embed {
-    display: block;
-    max-width: 720px;
-    height: auto;
-    margin: 3rem auto;
-  }
-
-  
-`;
-
-
+//This must be done as I dont know how to pass props through react router (not possible?),
+//so each module page must call a single component and send just one prop to it.
 export const CSRFpage = () => (
-  <Styles>
-    <div class="embed">
-      <ResponsiveEmbed aspectRatio="16by9">
-        <iframe title="CSRF Tutorial" src="https://www.youtube.com/embed/vRBihr41JTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </ResponsiveEmbed>  
-    </div>
-    <MCQ questions={CSRF.questions} />
-  </Styles>
+  <ModuleLayout quiz={CSRF} />
 )

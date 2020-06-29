@@ -1,4 +1,6 @@
 const CSRF = {
+  videoTitle: "CSRF Tutorial",
+  videoSrc: "https://www.youtube.com/embed/vRBihr41JTo",
   questions: [
     {
       prompt: 'Which of the following energy sources is the least expensive?',

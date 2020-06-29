@@ -1,4 +1,6 @@
 const SQL = {
+  videoTitle: "SQL Tutorial",
+  videoSrc: "https://www.youtube.com/embed/1GJP_drZFa0",
   questions: [
     {
       prompt: 'What is the answer to the first SQL question?',
