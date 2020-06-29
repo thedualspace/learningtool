@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {Dashboard} from './Dashboard';
 import {Layout} from './components/Layout';
+import {Login} from './Login';
 import {NavigationBar} from './components/NavigationBar';
 import {NoMatch} from './NoMatch';
 import {SQLpage} from './SQL-page';
@@ -14,9 +15,9 @@ function App() {
   return (
     <React.Fragment>
       <NavigationBar />
-      <Layout>
         <Router>
           <Switch>
+            <Route exact path="/" component={Login} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/modules/SQL" component={SQLpage} />
             <Route exact path="/modules/NOSQL" component={NOSQLpage} />
@@ -25,7 +26,6 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </Router>
-      </Layout>
     </React.Fragment>
   );
 }
