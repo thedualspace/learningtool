@@ -1,34 +1,35 @@
 const CSRF = {
+  name: "CSRF",
   videoTitle: "CSRF Tutorial",
   videoSrc: "https://www.youtube.com/embed/vRBihr41JTo",
   questions: [
     {
-      prompt: 'Which of the following energy sources is the least expensive?',
+      prompt: 'What does CSRF stand for?',
       answer: [
-        'Solar PV',
-        'Hydro',
-        'Onshore Wind',
-        'Offshore Wind'
+        'Structured Query Language Injection',
+        'Cross Site Scripting',
+        'Non-structured Query Language Injection',
+        'Cross Site Request Forgery'
       ]
     },
 
     {
-      prompt: 'Which of the following renewable energy sources has seen the greatest cost reductions (costs per MWh of electricity generated) in recent years?',
+      prompt: 'Which HTTP request type does a CSRF attack typically target?',
       answer: [
-        'Onshore Wind',
-        'Geothermal',
-        'Solar',
-        'Wave'
+        'GET',
+        'POST',
+        'PATCH',
+        'PUT'
       ]
     },
 
     {
-      prompt: 'The wind turbine on Dundalk Institute of Technology campus produces approximately how much of the campus energy requirements',
+      prompt: 'What is a one-time token (nonce) used for?',
       answer: [
-        'Half',
-        'One quarter',
-        'Three quarters',
-        'All'
+        'Encrypting files and folders securely',
+        'Sending URL links over HTTPS',
+        'Validating form submission requests',
+        'All of the above'
       ]
     }
   ]

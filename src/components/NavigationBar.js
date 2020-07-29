@@ -29,7 +29,7 @@ const Styles = styled.div`
          <Nav className='ml-auto' >
            <Nav.Item><Nav.Link href='/dashboard'>Home</Nav.Link></Nav.Item>
            <Nav.Item><Nav.Link href='/contact'>Contact</Nav.Link></Nav.Item>
-           <Nav.Item><Nav.Link href='/'>Login</Nav.Link></Nav.Item>
+           <Nav.Item><Nav.Link href='/results'>Results</Nav.Link></Nav.Item>
          </Nav>
        </Navbar.Collapse>
      </Navbar>

@@ -1,34 +1,35 @@
 const NOSQL = {
+  name: "NOSQL",
   videoTitle: "NOSQL Tutorial",
   videoSrc: "https://www.youtube.com/embed/h0h37-Dwd_A",
   questions: [
     {
-      prompt: 'What is the answer to the first NOSQL question?',
+      prompt: 'What is NoSQL injection?',
       answer: [
-        'correct',
-        'incorrect',
-        'incorrect',
-        'incorrect'
+        'Injection of images into a NoSQL database',
+        'Injection of commands into a SQL database',
+        'Injection of scripts into a SQL webpage',
+        'Injection of commands into a NoSQL database'
       ]
     },
 
     {
-      prompt: 'What is the answer to the second NOSQL question?',
+      prompt: 'Lack of which practice(s) may lead to NoSQL injection?',
       answer: [
-        'incorrect',
-        'correct',
-        'incorrect',
-        'incorrect'
+        'Sanitising inputs',
+        'Input validation',
+        'Escaping',
+        'All of the above'
       ]
     },
 
     {
-      prompt: 'What is the answer to the third NOSQL question?',
+      prompt: 'How could an attacker bypass the authentication process?',
       answer: [
-        'incorrect',
-        'incorrect',
-        'correct',
-        'incorrect'
+        'Injection of an entry creation command',
+        'Injection of a NoSQL comparison operator',
+        'Injection of an entry deletion command',
+        'Injection of html commands'
       ]
     }
   ]

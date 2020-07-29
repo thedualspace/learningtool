@@ -1,5 +1,6 @@
 import React from 'react';
 import Question from './Question';
+const greeting = "hello";
 
 export class QuestionList extends React.Component {
   setAnswerEvent(e) {
@@ -8,7 +9,7 @@ export class QuestionList extends React.Component {
   
   render() {
     return (
-      <form onSubmit={this.setAnswerEvent}>
+      <form onSubmit={this.setAnswerEvent} method="POST" action={`/mcqsubmit/${this.props.quizName}`} name="MCQ">
         <div className="Question-list">
           {
             this.props.questions.map( question => {

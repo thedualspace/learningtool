@@ -8,6 +8,7 @@ import SQLImage from './assets/SQLimage.jpg';
 import NOSQLImage from './assets/NOSQLimage.jpg';
 import XSSImage from './assets/XSSimage.jpg';
 import CSRFImage from './assets/CSRFimage.jpg';
+import auth from './auth';
 
 const Styled = styled.div`
 h2 {
@@ -37,7 +38,7 @@ h2 {
 
 
 //No return statement reqd as brackets indicate that the statement within () is on a single line.
-export const Dashboard = () => (
+export const Dashboard = (props) => (
   <Styled>
     <Container>
       <h2>Dashboard</h2>
@@ -86,5 +87,6 @@ export const Dashboard = () => (
         </Card>
       </CardDeck>
     </Container>
+    <button onClick={props.onLogin}>login check</button>
   </Styled>
 )

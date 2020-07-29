@@ -30,7 +30,7 @@ export class ModuleLayout extends React.Component{
             </ResponsiveEmbed>  
           </div>
           <div className="MCQ">
-            <MCQ questions={this.props.quiz.questions} />
+            <MCQ questions={this.props.quiz.questions} quizName={this.props.quiz.name}/>
           </div>
         </Container>
       </Styles>

@@ -1,34 +1,35 @@
 const XSS = {
+  name: "XSS",
   videoTitle: "XSS Tutorial",
   videoSrc: "https://www.youtube.com/embed/eymxlggL9EQ",
   questions: [
     {
-      prompt: 'What is the answer to the first XSS question?',
+      prompt: 'XSS is:',
       answer: [
-        'correct',
-        'incorrect',
-        'incorrect',
-        'incorrect'
+        'Injection of commands',
+        'Injection of parameters',
+        'Injection of scripts',
+        'All of the above'
       ]
     },
 
     {
-      prompt: 'What is the answer to the second XSS question?',
+      prompt: 'Which of the following languages are associated with XSS?',
       answer: [
-        'incorrect',
-        'correct',
-        'incorrect',
-        'incorrect'
+        'C++',
+        'Javascript',
+        'COBOL',
+        'Java'
       ]
     },
 
     {
-      prompt: 'What is the answer to the third XSS question?',
+      prompt: 'Cross site scripting can be prevented by:',
       answer: [
-        'incorrect',
-        'incorrect',
-        'correct',
-        'incorrect'
+        'Input Validation',
+        'Input Sanitization',
+        'Escaping',
+        'All of the above'
       ]
     }
   ]

@@ -1,34 +1,35 @@
 const SQL = {
+  name: "SQL",
   videoTitle: "SQL Tutorial",
   videoSrc: "https://www.youtube.com/embed/1GJP_drZFa0",
   questions: [
     {
-      prompt: 'What is the answer to the first SQL question?',
+      prompt: 'Which option of sqlmap is required to test an application which expects the input with POST method?',
       answer: [
-        'correct',
-        'incorrect',
-        'incorrect',
-        'incorrect'
+        '--get',
+        '--post',
+        '--data',
+        '--send'
       ]
     },
 
     {
-      prompt: 'What is the answer to the second SQL question?',
+      prompt: 'Which of the following is NOT a valid comment sign in case of MySQL?',
       answer: [
-        'incorrect',
-        'correct',
-        'incorrect',
-        'incorrect'
+        '#',
+        '--',
+        '//',
+        '/*'
       ]
     },
 
     {
-      prompt: 'What is the answer to the third SQL question?',
+      prompt: 'Which of the following can be used to bypass a basic login screen in case of MySQL?',
       answer: [
-        'incorrect',
-        'incorrect',
-        'correct',
-        'incorrect'
+        '\'OR 1=1//',
+        '\'OR 1=1',
+        '\'OR \'1\'=1',
+        '\'OR 1=1-- -'
       ]
     }
   ]

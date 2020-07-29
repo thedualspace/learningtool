@@ -11,6 +11,7 @@ export class Question extends React.Component{
           <input type="radio" value={this.props.question.answer[0]} name={this.props.question.prompt} id='a' />a.) {this.props.question.answer[0]} <br/>
           <input type="radio" value={this.props.question.answer[1]} name={this.props.question.prompt} id='b' />b.) {this.props.question.answer[1]} <br/>
           <input type="radio" value={this.props.question.answer[2]} name={this.props.question.prompt} id='c' />c.) {this.props.question.answer[2]} <br/>
+          <input type="radio" value={this.props.question.answer[3]} name={this.props.question.prompt} id='c' />d.) {this.props.question.answer[3]} <br/>
         </div>
       </div>
     )
